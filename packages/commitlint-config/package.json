@@ -1,7 +1,8 @@
 {
   "name": "@bluryar/commitlint-config",
   "type": "commonjs",
-  "version": "1.0.4",
+  "version": "1.0.5",
+  "private": false,
   "description": "Adapt To [cz-git](https://github.com/Zhengqbbb/cz-git) And [commitlint](https://github.com/conventional-changelog/commitlint)",
   "author": "bluryar <bluryarl@gmail.com>",
   "license": "MIT",
@@ -38,5 +39,8 @@
   },
   "devDependencies": {
     "cz-git": "^1.4.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

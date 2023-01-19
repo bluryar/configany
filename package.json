@@ -1,7 +1,7 @@
 {
   "name": "@bluryar/configany",
   "type": "commonjs",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": true,
   "description": "[🦉bluryar](https://github.com/bluryar) 的前端工程相关配置",
   "author": "bluryar <bluryarl@gmail.com>",
