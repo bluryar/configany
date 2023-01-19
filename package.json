@@ -1,7 +1,7 @@
 {
   "name": "@bluryar/configany",
   "type": "commonjs",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "private": true,
   "description": "[🦉bluryar](https://github.com/bluryar) 的前端工程相关配置",
   "author": "bluryar <bluryarl@gmail.com>",
@@ -23,6 +23,10 @@
     "clear:modules": "rimraf ./node_modules && rimraf ./packages/*/node_modules",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "bump:patch": "nr -r bump:patch && npx bumpp patch -y",
+    "bump:minor": "nr -r bump:minor && npx bumpp minor -y",
+    "bump:major": "nr -r bump:major && npx bumpp major -y",
+    "release": "nr -r release",
     "prepare": "husky install"
   },
   "devDependencies": {
