@@ -5,7 +5,17 @@
   "description": "Adapt To [cz-git](https://github.com/Zhengqbbb/cz-git) And [commitlint](https://github.com/conventional-changelog/commitlint)",
   "author": "bluryar <bluryarl@gmail.com>",
   "license": "MIT",
-  "keywords": ["cz-git", "commitlint", "commitizen"],
+  "homepage": "https://github.com/bluryar/configany/tree/main/packages/commitlint-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluryar/configany.git"
+  },
+  "bugs": "https://github.com/bluryar/configany/issues",
+  "keywords": [
+    "cz-git",
+    "commitlint",
+    "commitizen"
+  ],
   "exports": {
     ".": {
       "default": "./index.js"
@@ -16,5 +26,11 @@
   "files": [
     "index.js",
     "README.md"
-  ]
+  ],
+  "dependencies": {
+    "@commitlint/config-conventional": "^17.4.2"
+  },
+  "devDependencies": {
+    "cz-git": "^1.4.1"
+  }
 }

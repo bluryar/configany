@@ -34,7 +34,11 @@
     "voorjaar.windicss-intellisense",
     "WakaTime.vscode-wakatime",
     "znck.grammarly",
-    "vivaxy.vscode-conventional-commits"
+
+    // bluryar
+    "vivaxy.vscode-conventional-commits",
+    "zjffun.snippetsmanager",
+    "wmaurer.change-case"
   ],
   "unwantedRecommendations": [
     "octref.vetur",

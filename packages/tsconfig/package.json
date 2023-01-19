@@ -5,11 +5,15 @@
   "description": "Extend from [vuejs/tsconfig](https://github.com/vuejs/tsconfig)",
   "author": "bluryar <bluryarl@gmail.com>",
   "license": "MIT",
+  "homepage": "https://github.com/bluryar/configany/tree/main/packages/tsconfig#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluryar/configany.git"
+  },
+  "bugs": "https://github.com/bluryar/configany/issues",
   "keywords": ["tsconfig"],
   "exports": {
-    ".": {
-      "default": "./tsconfig.json"
-    },
+    ".": "./tsconfig.json",
     "./tsconfig.json": "./tsconfig.json",
     "./tsconfig.web.json": "./tsconfig.web.json",
     "./tsconfig.node.json": "./tsconfig.node.json",
@@ -24,8 +28,5 @@
   ],
   "dependencies": {
     "@vue/tsconfig": "^0.1.3"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

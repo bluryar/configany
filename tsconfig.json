@@ -1,9 +1,4 @@
 {
-  "extends": "@bluryar/tsconfig",
-  "compilerOptions": {
-    "types": [
-      "node"
-    ]
-  },
+  "extends": "@bluryar/tsconfig/tsconfig.node.json",
   "files": []
 }

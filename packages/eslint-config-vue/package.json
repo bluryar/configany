@@ -5,6 +5,12 @@
   "description": "Extend from [antfu/eslint-config](https://github.com/antfu/eslint-config)",
   "author": "bluryar <bluryarl@gmail.com>",
   "license": "MIT",
+  "homepage": "https://github.com/bluryar/configany/tree/main/packages/eslint-config-vue#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluryar/configany.git"
+  },
+  "bugs": "https://github.com/bluryar/configany/issues",
   "keywords": ["config", "eslint", "eslintrc"],
   "exports": {
     ".": {
@@ -17,12 +23,10 @@
     "index.js",
     "README.md"
   ],
-  "peerDependencies": {
-    "@antfu/eslint-config": "^0.34.1",
-    "eslint": "^8.32.0"
-  },
   "dependencies": {
-    "@antfu/eslint-config": "^0.34.1",
+    "@antfu/eslint-config": "^0.34.1"
+  },
+  "devDependencies": {
     "eslint": "^8.32.0"
   },
   "publishConfig": {

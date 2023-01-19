@@ -1,5 +1,6 @@
+/** @type {import('eslint').ESLint.ConfigData} */
 module.exports = {
   extends: [
-    '@antfu/eslint-config-vue',
+    '@antfu',
   ],
 }

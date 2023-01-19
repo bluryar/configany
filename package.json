@@ -1,11 +1,16 @@
 {
   "name": "@bluryar/configany",
   "type": "commonjs",
-  "version": "1.0.0",
   "private": true,
-  "description": "[🦉bluryar](https://github.com/bluryar) ",
+  "description": "[🦉bluryar](https://github.com/bluryar) 的前端工程相关配置",
   "author": "bluryar <bluryarl@gmail.com>",
   "license": "MIT",
+  "homepage": "https://github.com/bluryar/configany#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluryar/configany.git"
+  },
+  "bugs": "https://github.com/bluryar/configany/issues",
   "keywords": [
     "config",
     "eslint",
@@ -13,22 +18,33 @@
   ],
   "main": "index.js",
   "scripts": {
+    "check:types": "tsc --noEmit",
+    "clear:modules": "rimraf ./node_modules && rimraf ./packages/*/node_modules",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@antfu/ni": "^0.18.8",
-    "@bluryar/commitlint-config": "workspace:^1.0.0",
-    "@bluryar/eslint-config-vue": "workspace:^1.0.0",
-    "@bluryar/tsconfig": "workspace:^1.0.0",
+    "@bluryar/commitlint-config": "workspace:*",
+    "@bluryar/eslint-config-vue": "workspace:*",
+    "@bluryar/tsconfig": "workspace:*",
+    "@commitlint/cli": "^17.4.2",
+    "@types/eslint": "^8.4.10",
     "@types/node": "^18.11.18",
     "commitizen": "^4.2.6",
-    "commitlint": "^17.4.2",
     "cz-git": "^1.4.1",
     "eslint": "^8.32.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.1.0",
     "prettier": "^2.8.3",
+    "taze": "^0.8.5",
     "tsx": "^3.12.2",
+    "typescript": "^4.9.4",
     "unbuild": "^1.1.1"
+  },
+  "lint-staged": {
+    "*.{vue,js,jsx,ts,tsx,cjs,mjs,cts,mts,yaml,md,yml}": "eslint"
   },
   "config": {
     "commitizen": {
