@@ -1,7 +1,7 @@
 {
   "name": "@bluryar/commitlint-config",
   "type": "commonjs",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Adapt To [cz-git](https://github.com/Zhengqbbb/cz-git) And [commitlint](https://github.com/conventional-changelog/commitlint)",
   "author": "bluryar <bluryarl@gmail.com>",
   "license": "MIT",
@@ -27,6 +27,12 @@
     "index.js",
     "README.md"
   ],
+  "scripts": {
+    "bump:patch": "npx bumpp patch --no-commit --no-tag --no-push --yes",
+    "bump:minor": "npx bumpp minor --no-commit --no-tag --no-push --yes",
+    "bump:major": "npx bumpp major --no-commit --no-tag --no-push --yes",
+    "release": "npm publish"
+  },
   "dependencies": {
     "@commitlint/config-conventional": "^17.4.2"
   },

@@ -1,7 +1,7 @@
 {
   "name": "@bluryar/tsconfig",
   "type": "commonjs",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Extend from [vuejs/tsconfig](https://github.com/vuejs/tsconfig)",
   "author": "bluryar <bluryarl@gmail.com>",
   "license": "MIT",
@@ -11,7 +11,9 @@
     "url": "git+https://github.com/bluryar/configany.git"
   },
   "bugs": "https://github.com/bluryar/configany/issues",
-  "keywords": ["tsconfig"],
+  "keywords": [
+    "tsconfig"
+  ],
   "exports": {
     ".": "./tsconfig.json",
     "./tsconfig.json": "./tsconfig.json",
@@ -26,6 +28,12 @@
     "tsconfig.node.json",
     "README.md"
   ],
+  "scripts": {
+    "bump:patch": "npx bumpp patch --no-commit --no-tag --no-push --yes",
+    "bump:minor": "npx bumpp minor --no-commit --no-tag --no-push --yes",
+    "bump:major": "npx bumpp major --no-commit --no-tag --no-push --yes",
+    "release": "npm publish"
+  },
   "dependencies": {
     "@vue/tsconfig": "^0.1.3"
   }

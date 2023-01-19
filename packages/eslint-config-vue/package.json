@@ -1,7 +1,7 @@
 {
   "name": "@bluryar/eslint-config-vue",
   "type": "commonjs",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Extend from [antfu/eslint-config](https://github.com/antfu/eslint-config)",
   "author": "bluryar <bluryarl@gmail.com>",
   "license": "MIT",
@@ -11,7 +11,11 @@
     "url": "git+https://github.com/bluryar/configany.git"
   },
   "bugs": "https://github.com/bluryar/configany/issues",
-  "keywords": ["config", "eslint", "eslintrc"],
+  "keywords": [
+    "config",
+    "eslint",
+    "eslintrc"
+  ],
   "exports": {
     ".": {
       "default": "./index.js"
@@ -23,6 +27,12 @@
     "index.js",
     "README.md"
   ],
+  "scripts": {
+    "bump:patch": "npx bumpp patch --no-commit --no-tag --no-push --yes",
+    "bump:minor": "npx bumpp minor --no-commit --no-tag --no-push --yes",
+    "bump:major": "npx bumpp major --no-commit --no-tag --no-push --yes",
+    "release": "npm publish"
+  },
   "dependencies": {
     "@antfu/eslint-config": "^0.34.1"
   },
