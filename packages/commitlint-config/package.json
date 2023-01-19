@@ -1,0 +1,20 @@
+{
+  "name": "@bluryar/commitlint-config",
+  "type": "commonjs",
+  "version": "1.0.0",
+  "description": "Adapt To [cz-git](https://github.com/Zhengqbbb/cz-git) And [commitlint](https://github.com/conventional-changelog/commitlint)",
+  "author": "bluryar <bluryarl@gmail.com>",
+  "license": "MIT",
+  "keywords": ["cz-git", "commitlint", "commitizen"],
+  "exports": {
+    ".": {
+      "default": "./index.js"
+    },
+    "./*": "./*"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "README.md"
+  ]
+}

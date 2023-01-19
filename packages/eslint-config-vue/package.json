@@ -1,0 +1,31 @@
+{
+  "name": "@bluryar/eslint-config-vue",
+  "type": "commonjs",
+  "version": "1.0.0",
+  "description": "Extend from [antfu/eslint-config](https://github.com/antfu/eslint-config)",
+  "author": "bluryar <bluryarl@gmail.com>",
+  "license": "MIT",
+  "keywords": ["config", "eslint", "eslintrc"],
+  "exports": {
+    ".": {
+      "default": "./index.js"
+    },
+    "./*": "./*"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "@antfu/eslint-config": "^0.34.1",
+    "eslint": "^8.32.0"
+  },
+  "dependencies": {
+    "@antfu/eslint-config": "^0.34.1",
+    "eslint": "^8.32.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
