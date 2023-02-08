@@ -1,7 +1,7 @@
 {
   "name": "@bluryar/tsconfig",
   "type": "commonjs",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "private": false,
   "description": "Extend from [vuejs/tsconfig](https://github.com/vuejs/tsconfig)",
   "author": "bluryar <bluryarl@gmail.com>",
