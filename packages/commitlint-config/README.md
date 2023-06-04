@@ -26,7 +26,7 @@ _.commitlintrc.js_
  */
 module.exports = {
   extends: [
-    '@bluryar'
-  ]
+    '@bluryar',
+  ],
 }
 ```

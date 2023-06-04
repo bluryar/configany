@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "@tsconfig/node18/tsconfig.json",
+    "./node_modules/@vue/tsconfig/tsconfig.json"
+  ],
+  "compilerOptions": {
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    "./*.ts"
+  ]
+}

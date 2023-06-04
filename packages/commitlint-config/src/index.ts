@@ -1,4 +1,3 @@
-/** @type {import('cz-git').CommitizenGitOptions['types']} */
 const types = [
   {
     value: 'feat',
@@ -78,9 +77,7 @@ const types = [
     emoji: '⏪️',
   },
 ]
-
 const typeEnum = types.map(({ value }) => value)
-
 const messages = {
   type: '选择你要提交的类型 :',
   scope: '选择一个提交范围（可选）:',
@@ -94,8 +91,7 @@ const messages = {
   confirmCommit: '是否提交或修改commit ?',
 }
 
-/** @type {import('cz-git').UserConfig} */
-module.exports = {
+export default {
   extends: [
     '@commitlint/config-conventional',
   ],
