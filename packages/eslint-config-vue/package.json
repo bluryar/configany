@@ -1,7 +1,7 @@
 {
   "name": "@bluryar/eslint-config-vue",
   "type": "module",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "private": false,
   "description": "Extend from [antfu/eslint-config](https://github.com/antfu/eslint-config)",
   "author": "bluryar <bluryarl@gmail.com>",
