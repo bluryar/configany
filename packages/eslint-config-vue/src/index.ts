@@ -1,8 +1,7 @@
 export default {
   extends: [
-    // '@antfu/eslint-config-basic',
-
-    '@unocss',
+    '@antfu/eslint-config-basic',
+    // '@unocss',
 
     'plugin:import/recommended',
     'plugin:jsonc/recommended-with-jsonc',
@@ -231,4 +230,4 @@ export default {
       },
     },
   ],
-};
+}

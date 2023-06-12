@@ -40,6 +40,7 @@
     "@tsconfig/node18": "^2.0.1",
     "@types/eslint": "^8.40.0",
     "@types/node": "^18.16.16",
+    "@types/prettier": "^2.7.3",
     "bumpp": "^9.1.0",
     "commitizen": "^4.3.0",
     "cz-git": "^1.6.1",
