@@ -4,6 +4,7 @@
     "./node_modules/@vue/tsconfig/tsconfig.json"
   ],
   "compilerOptions": {
+    "moduleResolution": "node",
     "types": [
       "node"
     ]

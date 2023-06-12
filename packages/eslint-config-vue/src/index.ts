@@ -1,19 +1,20 @@
 export default {
   extends: [
-    '@antfu/eslint-config-basic',
+    // '@antfu/eslint-config-basic',
+
+    'alloy',
+    'alloy/vue',
+    'alloy/typescript',
+
     // '@unocss',
 
     'plugin:import/recommended',
     'plugin:jsonc/recommended-with-jsonc',
     'plugin:yml/standard',
     'plugin:markdown/recommended',
-
-    'alloy',
-    'alloy/vue',
-    'alloy/typescript',
   ],
 
-  plugins: ['antfu', 'markdown', 'unused-imports'],
+  plugins: ['antfu', 'markdown', 'unused-imports', 'n', 'html'],
   settings: {
     'import/resolver': {
       node: { extensions: ['.js', '.mjs'] },
@@ -34,6 +35,11 @@ export default {
   },
 
   rules: {
+    // node
+    // 'n/prefer-global/process': ['error', 'never'], // Not sure if we need it as we are using `process.env.NODE_ENV` a lot in front-end.
+    'n/prefer-global/buffer': ['error', 'never'],
+    'n/no-callback-literal': 'off',
+
     // Customize your rules
     //
     // Please keep this rule off because it requiresTypeChecking
@@ -63,7 +69,7 @@ export default {
     'yml/no-empty-document': 'off',
 
     // antfu
-    'antfu/if-newline': 'error',
+    // 'antfu/if-newline': 'error',
     'antfu/import-dedupe': 'error',
     'antfu/top-level-function': 'error',
     // 'antfu/prefer-inline-type-import': 'error',
@@ -230,4 +236,4 @@ export default {
       },
     },
   ],
-}
+};

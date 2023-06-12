@@ -1,21 +1,21 @@
-import path from 'node:path'
-import { defineConfig } from 'vite'
-import Vue from '@vitejs/plugin-vue'
-import Pages from 'vite-plugin-pages'
-import generateSitemap from 'vite-ssg-sitemap'
-import Layouts from 'vite-plugin-vue-layouts'
-import Components from 'unplugin-vue-components/vite'
-import AutoImport from 'unplugin-auto-import/vite'
-import Markdown from 'vite-plugin-vue-markdown'
-import { VitePWA } from 'vite-plugin-pwa'
-import VueI18n from '@intlify/unplugin-vue-i18n/vite'
-import VueDevTools from 'vite-plugin-vue-devtools'
-import LinkAttributes from 'markdown-it-link-attributes'
-import Unocss from 'unocss/vite'
-import Shiki from 'markdown-it-shiki'
+import path from 'node:path';
+import { defineConfig } from 'vite';
+import Vue from '@vitejs/plugin-vue';
+import Pages from 'vite-plugin-pages';
+import generateSitemap from 'vite-ssg-sitemap';
+import Layouts from 'vite-plugin-vue-layouts';
+import Components from 'unplugin-vue-components/vite';
+import AutoImport from 'unplugin-auto-import/vite';
+import Markdown from 'vite-plugin-vue-markdown';
+import { VitePWA } from 'vite-plugin-pwa';
+import VueI18n from '@intlify/unplugin-vue-i18n/vite';
+import VueDevTools from 'vite-plugin-vue-devtools';
+import LinkAttributes from 'markdown-it-link-attributes';
+import Unocss from 'unocss/vite';
+import Shiki from 'markdown-it-shiki';
 
-import VueMacros from 'unplugin-vue-macros/vite'
-import WebfontDownload from 'vite-plugin-webfont-dl'
+import VueMacros from 'unplugin-vue-macros/vite';
+import WebfontDownload from 'vite-plugin-webfont-dl';
 
 export default defineConfig({
   resolve: {
@@ -43,22 +43,13 @@ export default defineConfig({
 
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({
-      imports: [
-        'vue',
-        'vue-router',
-        'vue-i18n',
-        '@vueuse/head',
-        '@vueuse/core',
-      ],
+      imports: ['vue', 'vue-router', 'vue-i18n', '@vueuse/head', '@vueuse/core'],
       dts: 'src/auto-imports.d.ts',
       eslintrc: {
         enabled: !!1,
         filepath: './auto-imports-eslintrc.json',
       },
-      dirs: [
-        'src/composables',
-        'src/stores',
-      ],
+      dirs: ['src/composables', 'src/stores'],
       vueTemplate: true,
     }),
 
@@ -87,14 +78,14 @@ export default defineConfig({
             light: 'vitesse-light',
             dark: 'vitesse-dark',
           },
-        })
+        });
         md.use(LinkAttributes, {
           matcher: (link: string) => /^https?:\/\//.test(link),
           attrs: {
             target: '_blank',
             rel: 'noopener',
           },
-        })
+        });
       },
     }),
 
@@ -150,7 +141,7 @@ export default defineConfig({
       reduceInlineStyles: false,
     },
     onFinished() {
-      generateSitemap()
+      generateSitemap();
     },
   },
 
@@ -158,4 +149,4 @@ export default defineConfig({
     // TODO: workaround until they support native ESM
     noExternal: ['workbox-window', /vue-i18n/],
   },
-})
+});
