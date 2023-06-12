@@ -1,6 +1,6 @@
 export default {
   extends: [
-    '@antfu/eslint-config-basic',
+    // '@antfu/eslint-config-basic',
 
     '@unocss',
 
@@ -14,11 +14,7 @@ export default {
     'alloy/typescript',
   ],
 
-  plugins: [
-    'antfu',
-    'markdown',
-    'unused-imports',
-  ],
+  plugins: ['antfu', 'markdown', 'unused-imports'],
   settings: {
     'import/resolver': {
       node: { extensions: ['.js', '.mjs'] },
@@ -235,4 +231,4 @@ export default {
       },
     },
   ],
-}
+};
