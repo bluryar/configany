@@ -1,7 +1,7 @@
 {
   "name": "@bluryar/configany",
   "type": "module",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "private": true,
   "description": "[🦉bluryar](https://github.com/bluryar) 的前端工程相关配置",
   "author": "bluryar <bluryarl@gmail.com>",

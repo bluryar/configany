@@ -1,7 +1,7 @@
 {
   "name": "@bluryar/commitlint-config",
   "type": "module",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "private": false,
   "description": "Adapt To [cz-git](https://github.com/Zhengqbbb/cz-git) And [commitlint](https://github.com/conventional-changelog/commitlint)",
   "author": "bluryar <bluryarl@gmail.com>",
